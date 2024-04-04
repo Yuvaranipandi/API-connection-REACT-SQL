@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif; /* Adjusted font stack for better readability */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5; /* Light background color */
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace; /* Adjusted font stack */
+}
+
+/* Additional styles for specific elements can be added here */

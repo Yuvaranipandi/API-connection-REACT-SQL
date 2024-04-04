@@ -1,0 +1,138 @@
+/* //.Header {
+    background-color: black;
+    width: 100%;
+    height: 75px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.a:link,
+a:visited {
+    background-color: black;
+}
+
+.a:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+
+}
+
+.b {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+    background-color: white;
+    background-position: center;
+    gap:20px;
+    font-size: larger;
+    box-sizing: border-box;
+    padding: 16px;
+
+}
+
+.b:link,
+b {
+
+    font-size: 15px;
+    font-weight: 200;
+    background-color: black;
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+
+button {
+    padding: 10px 15px 10px 15px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 5px;
+
+}
+
+input[type=text],input[type=]{
+    width: 200px;
+    height: 25px;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: black;
+    
+    
+
+
+} */
+
+.b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .form-login {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .form-login div {
+    margin-bottom: 15px;
+  }
+  
+  .form-login label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-login input[type="text"],
+  .form-login input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .form-login button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .form-login button:hover {
+    background-color: #0056b3;
+  }
+  
