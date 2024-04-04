@@ -9,7 +9,7 @@ var connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "root",
-  database: "login",
+  database: "new_schema",
 });
 connection.connect(function (err) {
   if (err) {
@@ -23,9 +23,9 @@ app.get("/", (req, res) => {
 });
 app.post("/post", (req, res) => {
   const requestData = req.body;
-  console.log("Recieved data:", requestData.name);
+  console.log("Recieved data:", requestData.firstname);
   connection.query(
-    `INSERT INTO users (username,email,password) VALUES ("${requestData.name}", "${requestData.email}","${requestData.password}")`,
+    `INSERT INTO clients (firstname,lastname,email,password) VALUES ("${requestData.firstname}", "${requestData.lastname}","${requestData.email}","${requestData.password}")`,
     function (error, results, fields) {
       if (error) throw error;
        res.status(200).json(results[0]);
@@ -34,6 +34,6 @@ app.post("/post", (req, res) => {
 //   res.status(404).send('Sorry, cant find that');
   connection.end();
 });
-app.listen(3000);
+app.listen(5000);
 //01iIkCbiNKqyRruPmJ9KAw
 // 
